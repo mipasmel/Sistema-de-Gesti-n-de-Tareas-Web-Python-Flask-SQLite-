@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Editar Tarea</title></head>
+<body>
+    <h1>Editar tarea</h1>
+    <form method="post">
+        <input type="text" name="title" value="{{ task.title }}" required>
+        <input type="submit" value="Actualizar">
+    </form>
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>
